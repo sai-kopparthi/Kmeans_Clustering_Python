@@ -1,0 +1,105 @@
+Name : Sai Kopparthi
+Student ID: 915623695
+
+1) K means algorithm is an unsupervised learning technique which I implemented in this assignment and It basically cluster the group of points are clearly noticeable with large intra cluster distance and less inter cluster distances .  And we Finally we need to find the means of the given all the cluster points till there is no change in the mean centroids of the cluster any more even in this assignment I had not implemented that. I did this for 40 iterations and to show that at each iteration I am updating my means values that leave to a convergence point. I am giving here my objective function values and time it take to compute new center points and cluster points for each center for every 10 sec here.
+
+(10000, 122)
+107272.0
+Time after 0 iteration. 1.0512657165527344
+61146.18715684154
+57943.070742836666
+56766.87555297018
+55996.02850029473
+55471.646867212716
+55214.53359421208
+55055.15964254543
+54969.74986241425
+54918.4560975338
+54880.86435385703
+Time after 10 iteration. 10.15819239616394
+54851.58960415325
+54824.09040182819
+54801.62576941779
+54790.80709739438
+54768.296768384185
+54694.40067362973
+54556.81858241607
+54507.13631351054
+54503.122284281155
+54501.74722947282
+Time after 20 iteration. 19.134089469909668
+54500.04669220788
+54499.18065875427
+54498.89079411081
+54498.75490156796
+54498.72018824101
+54498.70631921194
+54498.68881728165
+54498.68881728165
+54498.68881728165
+54498.68881728165
+Time after 30 iteration. 29.189785480499268
+54498.68881728165
+54498.68881728165
+54498.68881728165
+54498.68881728165
+54498.68881728165
+54498.68881728165
+54498.68881728165
+54498.68881728165
+54498.68881728165
+54498.68881728165
+Time after 40 iteration. 39.64016675949097
+
+
+So objective function is the measure of overall how far every point in the dataset is from the cluster mean of its assigned clusters.
+
+
+2)It is the same approach how I did for my first question but only difference whenever I am creating the cluster array that store array as the points. Now I am storing the indices's of those points and storing  in the cluster array. And the calculate the mean and updating the center and cluster points again to the nearest centers for each and every iteration. And here in this problem I implemented the euclidean distance between points with scipy.spare.linalg.norm() and centers being dense points I calculated as the same way as of first question. And Another important finding is that still for question 2 it can take some more iteration more than 40 to get converge with a vary low threshold values. And thses are the following results of my output.
+
+1036.5612988889443
+Time after 0 iteration. 49.466893911361694
+429.0855338698723
+335.7292424424334
+289.05023158344653
+260.90585059345545
+241.92218954618508
+227.86365296998022
+217.13200285648563
+208.3431111425202
+201.33462249172976
+195.6541461792537
+Time after 10 iteration. 585.8477911949158
+191.12004221107094
+187.3806939143321
+184.174354511246
+181.20601199749404
+178.60872458838878
+175.86881195873246
+173.41236097277175
+171.32818815676436
+169.7985135477643
+168.5324116943949
+Time after 20 iteration. 1122.5451436042786
+167.57240056308495
+166.77449104456224
+166.17801641843073
+165.63894007302014
+165.0553243907642
+164.5559926869785
+164.12585091969316
+163.78275661080374
+163.53946795478214
+163.3413645527846
+Time after 30 iteration. 1658.2243604660034
+163.1919918774799
+163.0851118261195
+163.005737490333
+162.92447591324557
+162.84257196344808
+162.7703600923267
+162.70525644978855
+162.6356553998015
+162.5798011795414
+162.53489073090992
+Time after 40 iteration. 2197.2242414951324
